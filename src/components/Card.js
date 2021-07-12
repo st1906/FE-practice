@@ -19,15 +19,19 @@ const ContainerWithBackgroundImg = styled(Container)`
     background: url(${props.imgSrc}) no-repeat center center/cover;
     `}
 `;
-const Img = styled.img``;
+const Img = styled.img`
+  max-width: 280px;
+  max-height: 100%;
+`;
 const Genre = styled.p``;
 const Description = styled.p``;
 const Title = styled.h4``;
 
 const SmallCard = ({ title, imgSrc, genre }) => {
+  console.log(genre);
   return (
     <Container maxWidth="280px">
-      <Img src={imgSrc} maxWidth="280px" height="auto" />
+      <Img src={imgSrc} width="160px" />
       <Genre>{genre}</Genre>
       <Title>{title}</Title>
     </Container>
