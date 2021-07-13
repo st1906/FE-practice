@@ -1,37 +1,61 @@
 import styled from "@emotion/styled/macro";
 
-const SideBarContainer = styled.aside``;
-const ListContainer = styled.ul``;
-const ListItem = styled.li``;
+const SideBarContainer = styled.aside`
+  padding: 1rem 1rem 0 0;
+`;
+const ListContainer = styled.ul`
+  background-color: var(--primary-color);
+`;
+const ListItem = styled.li`
+  list-style-type: none;
+  padding: 0.5rem;
+  text-transform: UPPERCASE;
+  border-bottom: 1px solid black;
+
+  :hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
+`;
 const AboutContainer = styled.div``;
+const AboutTitle = styled.h4`
+  margin: 1rem 0;
+`;
+
+const categories = [
+  {label: "Comedy", },
+  {label: "Drama", },
+  {label: "Fantastic", },
+  {label: "Romantic", },
+  {label: "Anime", },
+  {label: "Adventure", },
+  {label: "Thriller", },
+  {label: "Science", },
+  {label: "Mystic", },
+  {label: "Military", },
+  {label: "Historical", },
+  {label: "Western", },
+  {label: "Musical", },
+  {label: "Family", },
+  {label: "Sport", },
+
+]
 
 export const SideBar = () => {
   return (
     <SideBarContainer>
       <ListContainer>
-        <ListItem>Comedy</ListItem>
-        <ListItem>Drama</ListItem>
-        <ListItem>Fantastic</ListItem>
-        <ListItem>Romantic</ListItem>
-        <ListItem>Anime</ListItem>
-        <ListItem>Adventure</ListItem>
-        <ListItem>Thriller</ListItem>
-        <ListItem>Mystic</ListItem>
-        <ListItem>Science</ListItem>
-        <ListItem>Military</ListItem>
-        <ListItem>Historical</ListItem>
-        <ListItem>Western</ListItem>
-        <ListItem>Musical</ListItem>
-        <ListItem>Family</ListItem>
-        <ListItem>Sport</ListItem>
+        {categories.map(category => <ListItem key={category.label}>{category.label}</ListItem>)}
       </ListContainer>
       <AboutContainer>
-        <p>About</p>
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
-        <p>Lorem ipsum</p>
+        <AboutTitle>About</AboutTitle>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
       </AboutContainer>
     </SideBarContainer>
   );

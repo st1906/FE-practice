@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Getting Started with React-Junior-Training
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses the [The Movie DB API]("https://developers.themoviedb.org"). Head there to get a key and place it as an env variable.
 
 ## Available Scripts
 
@@ -14,10 +15,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `yarn make:pretty``
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs Prettier to format code.
 
 ### `yarn build`
 
