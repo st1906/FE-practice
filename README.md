@@ -1,5 +1,8 @@
 # Getting Started with React-Junior-Training
 
+<img width="515" alt="Movie-FE" src="https://user-images.githubusercontent.com/48855292/125510262-ff1cc954-f311-4dbc-9bf6-ea45edbdae0d.png">
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project uses the [The Movie DB API]("https://developers.themoviedb.org"). Head there to get a key and place it as an env variable.
 
