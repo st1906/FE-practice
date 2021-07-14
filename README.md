@@ -1,5 +1,8 @@
 # Getting Started with React-Junior-Training
 
+<img width="515" alt="Movie-FE" src="https://user-images.githubusercontent.com/48855292/125510262-ff1cc954-f311-4dbc-9bf6-ea45edbdae0d.png">
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project uses the [The Movie DB API]("https://developers.themoviedb.org"). Head there to get a key and place it as an env variable.
 
@@ -15,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn make:pretty``
+### `yarn make:pretty`
 
 Runs Prettier to format code.
 
