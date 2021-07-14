@@ -19,10 +19,12 @@ const SearchIconContainer = styled.span`
 `;
 
 export const Search = () => {
-    return (<SearchContainer>
-        <SearchInput />
-        <SearchIconContainer>
-          <SearchIcon color="var(--accent-color)" />
-        </SearchIconContainer>
-      </SearchContainer>)
-}
+  return (
+    <SearchContainer>
+      <SearchInput />
+      <SearchIconContainer>
+        <SearchIcon color="var(--accent-color)" />
+      </SearchIconContainer>
+    </SearchContainer>
+  );
+};

@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { SideBar } from "../components/SideBar";
 import { Button } from "../components/Button";
 import { useHttp } from "../http/useHttp";
-import {parseMovies} from "../utils/parseMovies";
+import { parseMovies } from "../utils/parseMovies";
 import styled from "@emotion/styled/macro";
 
 const HomeContainer = styled.div`
@@ -46,7 +46,6 @@ const SectionTitle = styled.p`
 const dailyTrending = "trending/movie/day";
 const discoverMovies = "discover/movie";
 const apiKey = process.env.REACT_APP_MOVIE_API_KEY;
-
 
 export const Home = () => {
   const { results: dailyTrendingResults } = useHttp(

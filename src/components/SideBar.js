@@ -24,29 +24,30 @@ const AboutTitle = styled.h4`
 `;
 
 const categories = [
-  {label: "Comedy", },
-  {label: "Drama", },
-  {label: "Fantastic", },
-  {label: "Romantic", },
-  {label: "Anime", },
-  {label: "Adventure", },
-  {label: "Thriller", },
-  {label: "Science", },
-  {label: "Mystic", },
-  {label: "Military", },
-  {label: "Historical", },
-  {label: "Western", },
-  {label: "Musical", },
-  {label: "Family", },
-  {label: "Sport", },
-
-]
+  { label: "Comedy" },
+  { label: "Drama" },
+  { label: "Fantastic" },
+  { label: "Romantic" },
+  { label: "Anime" },
+  { label: "Adventure" },
+  { label: "Thriller" },
+  { label: "Science" },
+  { label: "Mystic" },
+  { label: "Military" },
+  { label: "Historical" },
+  { label: "Western" },
+  { label: "Musical" },
+  { label: "Family" },
+  { label: "Sport" },
+];
 
 export const SideBar = () => {
   return (
     <SideBarContainer>
       <ListContainer>
-        {categories.map(category => <ListItem key={category.label}>{category.label}</ListItem>)}
+        {categories.map((category) => (
+          <ListItem key={category.label}>{category.label}</ListItem>
+        ))}
       </ListContainer>
       <AboutContainer>
         <AboutTitle>About</AboutTitle>

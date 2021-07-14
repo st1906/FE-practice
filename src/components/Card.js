@@ -10,7 +10,7 @@ import styled from "@emotion/styled/macro";
 const Container = styled.div`
   max-width: ${(props) => (props.maxWidth ? props.maxWidth : "100%")};
   height: ${(props) => (props.height ? props.height : "auto")};
-  
+
   :hover {
     cursor: pointer;
     opacity: 0.7;
